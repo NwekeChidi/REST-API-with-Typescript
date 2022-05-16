@@ -19,6 +19,12 @@
 - null and undefined are considered secondary variable types
 - A variable of type string, boolean, or number can have null or undefined assigned to it
 - When defining a list variable of type tuple, the order at which the values are assigned **must** match the order at which the tuple is defined
-- TypeScript also has the **any** variable type which can be used to initialize variable without a specific type
-- TypeScript also has the **unknown** variable type
-  -- It also includes type casting
+- TypeScript also has the `any` variable type which can be used to initialize variable without a specific type
+- TypeScript also has the `unknown` variable type
+- It also includes type casting
+
+### Type Inference
+
+- When a variable is declared in typescript without a type specified, typescript automatically infers a type to it depending on the value assigned to the variable. However, this inference only works when a value is assigned to a variable on initialization
+
+- Multiple types are a thing in Typescript. This is the case where on variable declaration, you can specify the variable to have more than one type, say `string` and or `number`. This is different from using `any` because here, the variable is restricted to only contain data of specified types whereas `any` type has no restrictions. Also, this method provides intellisence support to the variable
