@@ -44,3 +44,29 @@ if (hasName(myVariable1)) {
 }
 
 //(myVariable as string).toUpperCase();
+
+// Functions
+function add(num1: number, num2: number = undefined): number {
+    if (num2) return num1 + num2;
+    else return num1;
+}
+
+console.log(add(5));
+console.log(add(5, 10));
+
+// Interfaces
+interface Person {
+    firstName: string;
+    lastName?: string;
+};
+
+function fullName(person: Person) {
+    console.log(`${person.firstName} ${person.lastName}`);
+}
+
+let p = {
+    firstName: "Gabriel",
+    lastName: "Nweke"
+}
+
+fullName(p);
