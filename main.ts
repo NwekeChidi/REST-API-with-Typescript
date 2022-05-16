@@ -71,9 +71,9 @@ let p = {
 
 fullName(p);
 
-// Classes and Access Modifiers
+// Classes
 class Employee {
-    employeeName: string;
+    public employeeName: string;
 
     constructor(name: string) {
         this.employeeName = name;
@@ -102,3 +102,6 @@ let m1 = new Manager("Bruce");
 console.log(); console.log(m1.employeeName);
 m1.greet();
 m1.delegateWork()
+
+
+// Access Modifiers

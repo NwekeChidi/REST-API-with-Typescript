@@ -71,7 +71,7 @@ var p = {
     lastName: "Nweke"
 };
 fullName(p);
-// Classes and Access Modifiers
+// Classes
 var Employee = /** @class */ (function () {
     function Employee(name) {
         this.employeeName = name;
@@ -99,3 +99,4 @@ console.log();
 console.log(m1.employeeName);
 m1.greet();
 m1.delegateWork();
+// Access Modifiers

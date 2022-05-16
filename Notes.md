@@ -28,3 +28,13 @@
 - When a variable is declared in typescript without a type specified, typescript automatically infers a type to it depending on the value assigned to the variable. However, this inference only works when a value is assigned to a variable on initialization
 
 - Multiple types are a thing in Typescript. This is the case where on variable declaration, you can specify the variable to have more than one type, say `string` and or `number`. This is different from using `any` because here, the variable is restricted to only contain data of specified types whereas `any` type has no restrictions. Also, this method provides intellisence support to the variable
+
+## Access Modifiers
+
+- Access Modifiers are keywords such as `public`, `protected`, and `private` and used to set the accessibility of methods and properties / attributes of a class
+- - `public` gives methods and properties permission to be accessed from outside of the class. This is default modifier set to any method or attribute inside a class
+- - `private` restricts accessibility of methods and attributes to be only within the base class
+- - `protected` restricts accessibility of methods to only outside of the class but not to a derived class
+-
+- #### The `static` class method
+- A static class method is a method that belongs to class itself only and not to the instance of the class. This means they can be directly invoked on the class itself. Typescript also allows us to encapsulate static methods with access modifiers
